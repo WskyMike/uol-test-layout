@@ -1,0 +1,75 @@
+@reference "../index.css";
+
+.header {
+  @apply sticky top-0 left-0 w-full z-5 border-b border-gray-200;
+}
+
+.header__content {
+  @apply bg-white px-3 py-4 mx-7 flex items-center justify-between text-[1rem];
+}
+
+.header__left {
+  @apply flex items-center gap-4;
+}
+
+.header__burger-menu-icon {
+  transition: filter 0.1s ease;
+}
+
+.header__logo {
+  @apply flex items-center;
+}
+
+.header__nav {
+  @apply flex items-center space-x-5 gap-3 ms-[5rem];
+}
+
+.header__text {
+  @apply cursor-pointer;
+}
+
+.header__nav-item {
+  @apply flex items-center mr-5 text-gray-800 gap-1;
+}
+
+.header__icon {
+  @apply mr-1 text-gray-500;
+}
+
+.header__dollar-value {
+  @apply text-green-600;
+}
+
+.header__dollar-arrow {
+  @apply ml-2 mr-1;
+}
+
+.header__buttons {
+  @apply flex items-center;
+}
+
+.header__button {
+  @apply bg-transparent border-none text-gray-700 flex items-center;
+}
+
+.header__button--login {
+  @apply mr-5 gap-2;
+}
+
+.header__nav-item:nth-child(-n + 3):hover,
+.header__button--login:hover {
+  @apply text-[#ad0019];
+}
+.header__button--subscribe:hover {
+  @apply bg-[#d6ad00];
+}
+
+.header__button--login:hover .header__icon,
+.header__burger-menu-icon:hover {
+  filter: invert(27%) sepia(100%) saturate(1000%) hue-rotate(330deg)
+    brightness(91%) contrast(101%);
+}
+
+.header__button--subscribe {
+  @apply bg-yellow-400 text-black py-2 px-4 rounded-lg;
+}

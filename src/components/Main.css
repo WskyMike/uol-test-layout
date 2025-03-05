@@ -1,0 +1,49 @@
+@reference "../index.css";
+
+.main {
+  @apply flex flex-col mx-auto max-w-[640px] text-start pt-5 pb-10;
+}
+
+.main__header {
+  @apply my-5;
+}
+
+.main__header-category {
+  @apply text-[#d6001e];
+}
+
+.main__header-title {
+  @apply text-4xl font-bold leading-13;
+}
+
+.main__info {
+  @apply flex justify-between items-center mb-7 text-[0.8rem];
+}
+
+.main__setting {
+  @apply flex flex-col items-start gap-1;
+}
+
+.main__date {
+  @apply text-[#666666];
+}
+
+.main__social {
+  @apply flex items-center gap-3;
+}
+
+.main__content-image-wrapper {
+  @apply float-right w-[300px] ms-12;
+}
+
+.main__content-image {
+  @apply h-auto rounded-md;
+}
+
+.main__content-image-description {
+  @apply text-[0.8rem] leading-6 ps-2 mt-3 border-s-2 border-[#d6001e];
+}
+
+.main__content-text {
+  @apply w-full text-[1.3rem];
+}

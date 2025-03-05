@@ -1,0 +1,43 @@
+@reference "../index.css";
+
+.modal__overlay {
+  @apply fixed inset-0 flex justify-center items-center z-50;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  @apply bg-white p-6 rounded-lg shadow-lg w-96 flex flex-col;
+}
+
+.modal__logo {
+  @apply w-20 mb-4;
+}
+
+.modal__description {
+  @apply mb-4 text-start;
+}
+
+.modal__input-wrapper {
+  @apply flex flex-col w-full gap-3 pb-10 pt-5;
+}
+
+.modal__input {
+  @apply w-full p-3 mb-3 border border-gray-300 rounded-md;
+}
+
+.modal__register-btn {
+  @apply w-full bg-[#ffce00] text-black py-2 rounded font-bold mb-3;
+}
+
+.modal__register-btn:hover {
+  @apply bg-[#d6ad00] cursor-pointer;
+}
+
+.modal__login-text {
+  @apply text-sm pt-3;
+}
+
+.modal__login-link {
+  @apply text-blue-500 font-medium;
+}
